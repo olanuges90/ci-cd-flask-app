@@ -144,6 +144,12 @@ This project focuses on containerizing a Python Flask Application for Sports API
    <img width="983" alt="Screenshot 2025-03-27 at 10 01 00 AM" src="https://github.com/user-attachments/assets/a048df34-3010-4d0f-a0f1-dfb819901684" />
 
 
+  <img width="982" alt="Screenshot 2025-03-27 at 10 05 06 AM" src="https://github.com/user-attachments/assets/73dd9b8a-3959-4089-9269-66a47fd76400" />
+
+  NB: A Second Repo will Contain Terraform Configuration.
+
+
+
 
 
 
