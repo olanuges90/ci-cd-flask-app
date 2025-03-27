@@ -1,11 +1,15 @@
-# Deploying a Containerized a Flask Application on AWS with Docker,Amazon ECS, API Gateway and Elastic load balancer (ELB) using GitHub Actions for Continuous Integration/Continuous Development and monitoring using Cloudwatch Metrics.
+# Deploying a Containerized a Flask Application on AWS with Docker, Amazon ECS, API Gateway and Elastic load balancer (ELB) using GitHub Actions for Continuous Integration/Continuous Development and monitoring using Cloudwatch Metrics. 
+
+
+## An Enhancement to https://github.com/olanuges90/containerized-flask
 
 ## Project Overview
 
 This project focuses on containerizing a Python Flask Application for Sports API management using Docker and deploying it on AWS with a robust, scalable architecture. The deployment leverages Amazon ECS (Fargate) for container orchestration, an Elastic Load Balancer (ELB) for distributing traffic across multiple containers, and API Gateway for exposing the application’s REST endpoints securely. This setup ensures high availability, scalability, and efficient handling of incoming requests, making the application production-ready.
 
 ## Architectural Diagram
-<img width="1094" alt="Screenshot 2025-01-27 at 4 03 07 AM" src="https://github.com/user-attachments/assets/7b688e7b-1564-4a9b-920f-a779f961ef29" />
+![cicd drawio](https://github.com/user-attachments/assets/70c6bdfc-03ee-4d11-9234-03a41b289d29)
+
 
 ## Features
 - Containerized Python Flask application and its dependencies into a lightweight, portable Docker container.
