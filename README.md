@@ -129,10 +129,23 @@ This project focuses on containerizing a Python Flask Application for Sports API
 
            https://<api-gateway-id>.execute-api.us-east-1.amazonaws.com/prod/sports
 
-  ## Future Enhancements
-  - Built a frontend responsive design.
-  - Add HTTPS support to the ELB using an SSL certificate from AWS Certificate Manager (ACM)
-  - Configure CloudWatch for logging and monitoring.
+  ## PROJECT ENHANCEMENT
+  - Configure CloudWatch for monitoring
+ 
+    
+ <img width="1147" alt="Screenshot 2025-03-27 at 9 57 19 AM" src="https://github.com/user-attachments/assets/1f462f96-bdc2-46e3-92de-4322cc4226ac" />
+
+ - GitHub Action for Continous Integration and Continous Delivery
+
+
+   <img width="1403" alt="Screenshot 2025-03-27 at 5 32 10 AM" src="https://github.com/user-attachments/assets/db1cfea3-4b1c-4883-8b53-5722e3085e9c" />
+
+
+   <img width="983" alt="Screenshot 2025-03-27 at 10 01 00 AM" src="https://github.com/user-attachments/assets/a048df34-3010-4d0f-a0f1-dfb819901684" />
+
+
+
+
 
          
  
