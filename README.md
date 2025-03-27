@@ -1,4 +1,4 @@
-# Containerized a Python Flask Application on AWS using GitHub ACtions for Continuous Integration/Continuous Development and monitoring using Cloudwatch Metrics
+# Deploying a Containerized a Flask Application on AWS with Docker,Amazon ECS, API Gateway and Elastic load balancer (ELB) using GitHub Actions for Continuous Integration/Continuous Development and monitoring using Cloudwatch Metrics.
 
 ## Project Overview
 
