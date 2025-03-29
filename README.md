@@ -171,7 +171,7 @@ This project focuses on containerizing a Python Flask Application for Sports API
   <img width="982" alt="Screenshot 2025-03-27 at 10 05 06 AM" src="https://github.com/user-attachments/assets/73dd9b8a-3959-4089-9269-66a47fd76400" />
 
    3. Destroy Worflow.
-      - Navigae the the workflow file in your repo and look for the steps which defines all the actions in the worflow.
+      - Navigate the the workflow file in your repo and look for the steps which defines all the actions in the worflow.
       - Remove or comment out.
       - Commit Changes and Push.
       - 
