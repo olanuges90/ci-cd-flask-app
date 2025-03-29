@@ -151,12 +151,16 @@ This project focuses on containerizing a Python Flask Application for Sports API
  2. GitHub Action for Continous Integration and Continous Delivery.
     - Create the Workflow directory in the Repo.
 
-          .github/workflows/
-    - Inside the directory, create the workflow file
+             .github/workflows/
+    - Inside the directory, create the workflow file to define the workflow.
+
+              deploy.yml
     - Add Github Secrets:
 
-       - In the Github Repository, Nagivate to Acr
-
+       - In the Github Repository. Nagivate to Settings.
+       - Click on Actions, Secrets and Variables. Click the New Rpository secret button.
+       - Enter a Value and Pass the secrets: AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY AWS_REGION, ECR_REPOSITORY, ECR_CLUSTER and ECR_SERVICE.
+   - Commit and Push.
 
    <img width="1403" alt="Screenshot 2025-03-27 at 5 32 10 AM" src="https://github.com/user-attachments/assets/db1cfea3-4b1c-4883-8b53-5722e3085e9c" />
 
@@ -166,7 +170,7 @@ This project focuses on containerizing a Python Flask Application for Sports API
 
   <img width="982" alt="Screenshot 2025-03-27 at 10 05 06 AM" src="https://github.com/user-attachments/assets/73dd9b8a-3959-4089-9269-66a47fd76400" />
 
-  NB: A Second Repo will Contain Terraform Configuration.
+  ## NOTE: I also used Terraform  Deploy the Entire Application and to Keep it simple, I have added the Terraform Configuration in another Repository. 
 
 
 
