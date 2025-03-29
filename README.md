@@ -130,7 +130,7 @@ This project focuses on containerizing a Python Flask Application for Sports API
            https://<api-gateway-id>.execute-api.us-east-1.amazonaws.com/prod/sports
 
   ## PROJECT ENHANCEMENT
-1. IAM Permissions: Before I began the enahcement, I update the IAM permissions.
+1. IAM Permissions: Before I began the enhancement, I updated the IAM permissions.
   -   EC2ContainerRegistryFullAccess: Required in CI/CD pipelines where applications are built, pushed, and deployed using Docker images stored in ECR.
   -   GitHub-Actions-ECS-Deployment-Role: Required for CI/CD pipeline to interact with ECS, ECR, and other AWS services.
     
