@@ -178,7 +178,6 @@ This project focuses on containerizing a Python Flask Application for Sports API
       - Navigate the the workflow file in your repo and look for the steps which defines all the actions in the worflow.
       - Remove or comment out.
       - Commit Changes and Push.
-      - 
   ## NOTE: I also used Terraform  Deploy the Entire Application and to Keep it simple, I have added the Terraform Configuration in another Repository. 
 
 
