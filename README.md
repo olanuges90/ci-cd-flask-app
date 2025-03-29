@@ -130,12 +130,32 @@ This project focuses on containerizing a Python Flask Application for Sports API
            https://<api-gateway-id>.execute-api.us-east-1.amazonaws.com/prod/sports
 
   ## PROJECT ENHANCEMENT
-  - Configure CloudWatch for monitoring
- 
-    
- <img width="1147" alt="Screenshot 2025-03-27 at 9 57 19 AM" src="https://github.com/user-attachments/assets/1f462f96-bdc2-46e3-92de-4322cc4226ac" />
+1.  Configure CloudWatch for monitoring
+   - In the AWS Management Console, Search for Cloudwatch and Click.
+   - Navigate to Alarms in the left panel and Select.
+   - Click Create Alarm and Select Metric.
+   - In the AWS namespaces, Select ECS and Click "ClusterName, ServiceName".
+   - Highlight the Cluster name and Select the Metric.
+   - Make the threshold type "Static" and Define the alarm condition as "Greater than Threshold (>)".
+   - Define the threshold value.
+   - Define the alarm state that will trigger this action.
+   - Select Create a New Topic.
+   - Provide a Unique Topic Name.
+   - Provide Email endpoints that will receive the notification and Create Topic.
+   - Enter an Alarm Name and Create Alarm.
+   - Go to the Email provided as the endpoint for notification and Subscribe to the Notification.
 
- - GitHub Action for Continous Integration and Continous Delivery
+     <img width="764" alt="Screenshot 2025-03-29 at 2 57 00 AM" src="https://github.com/user-attachments/assets/1e28fd1d-20d9-440f-a8c1-09ea097df0e5" />
+     <img width="1147" alt="Screenshot 2025-03-27 at 9 57 19 AM" src="https://github.com/user-attachments/assets/1f462f96-bdc2-46e3-92de-4322cc4226ac" />
+       
+ 2. GitHub Action for Continous Integration and Continous Delivery.
+    - Create the Workflow directory in the Repo.
+
+          .github/workflows/
+    - Inside the directory, create the workflow file
+    - Add Github Secrets:
+
+       - In the Github Repository, Nagivate to Acr
 
 
    <img width="1403" alt="Screenshot 2025-03-27 at 5 32 10 AM" src="https://github.com/user-attachments/assets/db1cfea3-4b1c-4883-8b53-5722e3085e9c" />
