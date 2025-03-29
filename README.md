@@ -130,7 +130,11 @@ This project focuses on containerizing a Python Flask Application for Sports API
            https://<api-gateway-id>.execute-api.us-east-1.amazonaws.com/prod/sports
 
   ## PROJECT ENHANCEMENT
-1.  Configure CloudWatch for monitoring
+1. IAM Permissions: Before I began the enahcement, I update the IAM permissions.
+  -   EC2ContainerRegistryFullAccess: Required in CI/CD pipelines where applications are built, pushed, and deployed using Docker images stored in ECR.
+  -   GitHub-Actions-ECS-Deployment-Role: Required for CI/CD pipeline to interact with ECS, ECR, and other AWS services.
+    
+2.  Configure CloudWatch for monitoring
    - In the AWS Management Console, Search for Cloudwatch and Click.
    - Navigate to Alarms in the left panel and Select.
    - Click Create Alarm and Select Metric.
@@ -148,7 +152,7 @@ This project focuses on containerizing a Python Flask Application for Sports API
      <img width="764" alt="Screenshot 2025-03-29 at 2 57 00 AM" src="https://github.com/user-attachments/assets/1e28fd1d-20d9-440f-a8c1-09ea097df0e5" />
      <img width="1147" alt="Screenshot 2025-03-27 at 9 57 19 AM" src="https://github.com/user-attachments/assets/1f462f96-bdc2-46e3-92de-4322cc4226ac" />
        
- 2. GitHub Action for Continous Integration and Continous Delivery.
+ 3. GitHub Action for Continous Integration and Continous Delivery.
     - Create the Workflow directory in the Repo.
 
              .github/workflows/
@@ -162,15 +166,15 @@ This project focuses on containerizing a Python Flask Application for Sports API
        - Enter a Value and Pass the secrets: AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY AWS_REGION, ECR_REPOSITORY, ECR_CLUSTER and ECR_SERVICE.
    - Commit and Push.
 
-   <img width="1403" alt="Screenshot 2025-03-27 at 5 32 10 AM" src="https://github.com/user-attachments/assets/db1cfea3-4b1c-4883-8b53-5722e3085e9c" />
+        <img width="1403" alt="Screenshot 2025-03-27 at 5 32 10 AM" src="https://github.com/user-attachments/assets/db1cfea3-4b1c-4883-8b53-5722e3085e9c" />
+
+ 
+        <img width="983" alt="Screenshot 2025-03-27 at 10 01 00 AM" src="https://github.com/user-attachments/assets/a048df34-3010-4d0f-a0f1-dfb819901684" />
 
 
-   <img width="983" alt="Screenshot 2025-03-27 at 10 01 00 AM" src="https://github.com/user-attachments/assets/a048df34-3010-4d0f-a0f1-dfb819901684" />
+        <img width="982" alt="Screenshot 2025-03-27 at 10 05 06 AM" src="https://github.com/user-attachments/assets/73dd9b8a-3959-4089-9269-66a47fd76400" />
 
-
-  <img width="982" alt="Screenshot 2025-03-27 at 10 05 06 AM" src="https://github.com/user-attachments/assets/73dd9b8a-3959-4089-9269-66a47fd76400" />
-
-   3. Destroy Worflow.
+   4. Destroy Worflow.
       - Navigate the the workflow file in your repo and look for the steps which defines all the actions in the worflow.
       - Remove or comment out.
       - Commit Changes and Push.
